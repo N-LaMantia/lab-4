@@ -1,0 +1,37 @@
+{
+    "topic": "Literature",
+    "title": "Poetry Quiz",
+    "quizMessage": "Test your knowledge on poetry with this quiz!",
+    "questions": [
+        {
+            "question": "How many lines does a sonnet have?",
+            "options": [
+                "12",
+                "14",
+                "16",
+                "18"
+            ],
+            "answer": "14"
+        },
+        {
+            "question": "In poetry, the word 'foot' refers to: ",
+            "options": [
+                "Two or more syllables",
+                "A dozen poems",
+                "A stanza",
+                "A rhyme scheme"
+            ],
+            "answer": "Two or more syllables"
+        },
+        {
+            "question": "What is the longest Old English poem?",
+            "options": [
+                "The Canterbury Tales",
+                "Beowulf",
+                "The Divine Comedy",
+                "Paradise Lost"
+            ],
+            "answer": "Beowulf"
+        }
+    ]
+}

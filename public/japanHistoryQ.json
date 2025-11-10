@@ -1,0 +1,37 @@
+{
+    "topic": "History",
+    "title": "Japan History Quiz",
+    "quizMessage": "Test your Japanese knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "What year was Japan founded?",
+            "options": [
+                "660 BC",
+                "500 AD",
+                "300 BC",
+                "100 AD"
+            ],
+            "answer": "660 BC"
+        },
+        {
+            "question": "What year did Japan attack Pearl Harbor?",
+            "options": [
+                "1941",
+                "1939",
+                "1945",
+                "1940"
+            ],
+            "answer": "1941"
+        },
+        {
+            "question": "What year were the Tokyo Olympics held?",
+            "options": [
+                "2021",
+                "2020",
+                "2019",
+                "2018"
+            ],
+            "answer": "2021"
+        }
+    ]
+}

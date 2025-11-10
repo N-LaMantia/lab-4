@@ -1,0 +1,37 @@
+{
+    "topic": "Math",
+    "title": "Geometry Quiz",
+    "quizMessage": "Test your geometry knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "What is the name for a triangle that has all three sides the same length?",
+            "options": [
+                "Equilateral",
+                "Isosceles",
+                "Scalene",
+                "Right"
+            ],
+            "answer": "Equilateral"
+        },
+        {
+            "question": "What makes a triangle Isosceles?",
+            "options": [
+                "It has two sides of equal length",
+                "It has three sides of equal length",
+                "It has one right angle",
+                "It has no equal sides"
+            ],
+            "answer": "It has two sides of equal length"
+        },
+        {
+            "question": " If the three angles of a triangle measure 60, 80, and 40 degrees what type of triangle is it?",
+            "options": [
+                "Acute",
+                "Obtuse",
+                "Right",
+                "Straight"
+            ],
+            "answer": "Acute"
+        }
+    ]
+}

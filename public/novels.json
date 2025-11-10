@@ -1,0 +1,37 @@
+{
+    "topic": "Literature",
+    "title": "Novels Quiz",
+    "quizMessage": "Test your knowledge on novels with this quiz!",
+    "questions": [
+        {
+            "question": "Which of these novels was not written in the 19th century?",
+            "options": [
+                "Madame Bovary",
+                "War and Peace",
+                "Pride and Prejudice",
+                "The Great Gatsby"
+            ],
+            "answer": "The Great Gatsby"
+        },
+        {
+            "question": "What was the first science-fiction novel?",
+            "options": [
+                "Frankenstein",
+                "Brave New World",
+                "Dune",
+                "The Time Machine"
+            ],
+            "answer": "Frankenstein"
+        },
+        {
+            "question": "What was the first book in the Harry Potter series?",
+            "options": [
+                "Harry Potter and the Chamber of Secrets",
+                "Harry Potter and the Prisoner of Azkaban",
+                "Harry Potter and the Sorcerer's Stone",
+                "Harry Potter and the Goblet of Fire"
+            ],
+            "answer": "Harry Potter and the Sorcerer's Stone"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+.calc-quiz-container h1 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.alg-quiz-container h1 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.geo-quiz-container h1 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.calc-quiz-container ol li {
+    text-align: left;
+    margin-top: 2rem;
+    list-style-type: none;
+
+}
+
+.calc-quiz-container ol {
+    list-style-type: none;
+}
+
+.calc-quiz-container ol button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    gap: 100px;
+    position: center;
+    border-radius: 5px;
+    border: 1px solid blue;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}

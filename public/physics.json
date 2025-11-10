@@ -1,0 +1,37 @@
+{
+    "topic": "Science",
+    "title": "Physics Quiz",
+    "quizMessage": "Test your physics knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "What slows down the flow of current in a circuit?",
+            "options": [
+                "Current",
+                "Voltage",
+                "Capacitance",
+                "Resistance"
+            ],
+            "answer": "Resistance"
+        },
+        {
+            "question": "What does a switch do in a circuit?",
+            "options": [
+                "Guides current",
+                "Opens or closes the circuit",
+                "Increases voltage",
+                "Decreases current"
+            ],
+            "answer": "Opens or closes the circuit"
+        },
+        {
+            "question": "A resistor has 3 volts across it. The resistance of the circuit is 1.5 ohms. What is the current of the circuit?",
+            "options": [
+                "3 amps",
+                "20 amps",
+                "2 amps",
+                "200 amps"
+            ],
+            "answer": "2 amps"
+        }
+    ]
+}

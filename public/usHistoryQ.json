@@ -1,0 +1,37 @@
+{
+    "topic": "History",
+    "title": "USA History Quiz",
+    "quizMessage": "Test your USA knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "In what American state would you find Denali?",
+            "options": [
+                "Alaska",
+                "Texas",
+                "California",
+                "Florida"
+            ],
+            "answer": "Alaska"
+        },
+        {
+            "question": "When did Maurice and Richard McDonald open the first McDonald’s restaurant?",
+            "options": [
+                "1948",
+                "1955",
+                "1937",
+                "1962"
+            ],
+            "answer": "1948"
+        },
+        {
+            "question": "Through which national park does the Continental Divide not pass?",
+            "options": [
+                "Yellowstone",
+                "Yosemite",
+                "Rocky Mountain",
+                "Glacier"
+            ],
+            "answer": "Yosemite"
+        }
+    ]
+}

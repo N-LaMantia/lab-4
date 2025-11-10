@@ -1,0 +1,37 @@
+{
+    "topic": "Math",
+    "title": "Calculus Quiz",
+    "quizMessage": "Test your calculus knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "What is the derivative of x³ with respect to x?",
+            "options": [
+                "3x²",
+                "2x³",
+                "3x² + 1",
+                "x²"
+            ],
+            "answer": "3x²"
+        },
+        {
+            "question": "What is the integral of 2x with respect to x?",
+            "options": [
+                "x² + C",
+                "2x² + C",
+                "x + C",
+                "x³/3 + C"
+            ],
+            "answer": "x² + C"
+        },
+        {
+            "question": "What is the limit of (1 + 1/n)ⁿ as n approaches infinity?",
+            "options": [
+                "e",
+                "1",
+                "0",
+                "Infinity"
+            ],
+            "answer": "e"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "topic": "Math",
+    "title": "Algebra Quiz",
+    "quizMessage": "Test your algebra skills with this quiz!",
+    "questions": [
+        {
+            "question": "This year, a salesman sells a total of $60,000 worth of steak knives by going door-to-door. This represents a 20% increase from the year before. What was the value of his sales last year?",
+            "options": [
+                "$45,000",
+                "$48,000",
+                "$50,000",
+                "$52,500",
+                "$56,000"
+            ],
+            "answer": "$50,000"
+        },
+        {
+            "question": "Solve the equation for x.\nx/3 = (2x + 3)/7",
+            "options": [
+                "-3",
+                "2",
+                "3",
+                "3/7",
+                "9"
+            ],
+            "answer": "9"
+        },
+        {
+            "question": "Solve the equation for x.\n|x + 5| = 3",
+            "options": [
+                "-8",
+                "-3",
+                "-2",
+                "-8 and -2",
+                "-8 and -3"
+            ],
+            "answer": "-2"
+        }
+    ]
+}

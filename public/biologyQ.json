@@ -1,0 +1,37 @@
+{
+    "topic": "Science",
+    "title": "Biology Quiz",
+    "quizMessage": "Test your biology knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "The part of a cell with genetic information is called?",
+            "options": [
+                "Mitochondria",
+                "Nucleus",
+                "Ribosome",
+                "Chloroplast"
+            ],
+            "answer": "Nucleus"
+        },
+        {
+            "question": "A ribosome is?",
+            "options": [
+                "Organelle that synthesizes proteins",
+                "Organelle that produces energy",
+                "Organelle that stores water",
+                "Organelle that contains genetic material"
+            ],
+            "answer": "Organelle that synthesizes proteins"
+        },
+        {
+            "question": "The structure that is partially permeable (in a cell) is?",
+            "options": [
+                "Horse Radish",
+                "Cell wall",
+                "Cytoplasm",
+                "Cell membrane"
+            ],
+            "answer": "Cell membrane"
+        }
+    ]
+}

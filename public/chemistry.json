@@ -1,0 +1,37 @@
+{
+    "topic": "Science",
+    "title": "Chemistry Quiz",
+    "quizMessage": "Test your chemistry knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "What is dissociation?",
+            "options": [
+                "It is the process of a substance changing from a liquid to a gas.",
+                "It is the process of a substance changing from a solid to a liquid.",
+                "It is the breaking up of a compound into simpler constituents.",
+                "It is the process of combining two or more substances to form a new compound."
+            ],
+            "answer": "It is the breaking up of a compound into simpler constituents."
+        },
+        {
+            "question": "What is the general formula for a dissociation reaction?",
+            "options": [
+                "AB → A + B",
+                "A + B → AB",
+                "A + B → A-B",
+                "All of the above"
+            ],
+            "answer": "AB → A + B"
+        },
+        {
+            "question": " Intermolecular collisions may also ionize gases at _______ temperatures.",
+            "options": [
+                "Low",
+                "Moderate",
+                "High",
+                "Absolute zero"
+            ],
+            "answer": "High"
+        }
+    ]
+}

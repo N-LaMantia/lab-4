@@ -1,0 +1,190 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-title {
+  text-align: top center;
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+/* Style for all buttons in the topic container -----------*/
+.topic-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* Spacing of grid lines*/
+  margin-top: 2rem;
+}
+
+.topic-container button {
+  padding: 1rem 2rem;
+  /* padding for each button*/
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.math-button:hover {
+  border-color: red;
+}
+
+.history-button:hover {
+  border-color: red;
+}
+
+.science-button:hover {
+  border-color: red;
+}
+
+.literature-button:hover {
+  border-color: red;
+}
+
+
+/* End of styling for general topic buttons -----------------------*/
+
+/* Specific Topic styling -----------------------*/
+.math-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  position: center;
+
+  text-align: center;
+
+}
+
+.history-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  position: center;
+
+  text-align: center;
+}
+
+.science-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  position: center;
+
+  text-align: center;
+}
+
+.literature-title {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  position: center;
+
+  text-align: center;
+}
+
+.math-topic-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* space between buttons */
+  margin-top: 2rem;
+}
+
+.math-topic-container button {
+  padding: 1rem 2rem;
+  /* padding for each button*/
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.math-topic-container button:hover {
+  border-color: red;
+}
+
+.history-topic-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* space between buttons */
+  margin-top: 2rem;
+}
+
+.history-topic-container button {
+  padding: 1rem 2rem;
+  /* padding for each button*/
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.history-topic-container button:hover {
+  border-color: red;
+}
+
+.science-button:hover {
+  border-color: red;
+}
+
+.science-topic-container button:hover {
+  border-color: red;
+}
+
+.science-topic-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* space between buttons */
+  margin-top: 2rem;
+}
+
+.science-topic-container button {
+  padding: 1rem 2rem;
+  /* padding for each button*/
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.literature-topic-container button:hover {
+  border-color: red;
+}
+
+.literature-topic-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* space between buttons */
+  margin-top: 2rem;
+}
+
+.literature-topic-container button {
+  padding: 1rem 2rem;
+  /* padding for each button*/
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+/* specific topic styling end -----------------------*/
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

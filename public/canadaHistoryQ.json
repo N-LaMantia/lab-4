@@ -1,0 +1,37 @@
+{
+    "topic": "History",
+    "title": "Canadian History Quiz",
+    "quizMessage": "Test your Canadian knowledge with this quiz!",
+    "questions": [
+        {
+            "question": "Name the British general who died, along with Montcalm, in the battle for Canada in 1759.",
+            "options": [
+                "Benedict Arnold",
+                "James Wolfe",
+                "Sir Issac Brock",
+                "Frederick Middleton"
+            ],
+            "answer": "James Wolfe"
+        },
+        {
+            "question": "This man was born at Brunswick Place, Scotland, 10 January 1815.",
+            "options": [
+                "Simon Fraser",
+                "Archibald McNab",
+                "Sir John A. Macdonald",
+                "Agnes Macphail"
+            ],
+            "answer": "Sir John A. Macdonald"
+        },
+        {
+            "question": "When did the word Canada start appearing on maps?",
+            "options": [
+                "1330s",
+                "1850s",
+                "1550s",
+                "1700s"
+            ],
+            "answer": "1550s"
+        }
+    ]
+}

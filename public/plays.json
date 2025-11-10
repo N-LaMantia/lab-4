@@ -1,0 +1,37 @@
+{
+    "topic": "Literature",
+    "title": "Plays Quiz",
+    "quizMessage": "Test your knowledge on plays with this quiz!",
+    "questions": [
+        {
+            "question": "In which of the following plays by Shakespeare does the character Claudius appear?",
+            "options": [
+                "Hamlet",
+                "Macbeth",
+                "Othello",
+                "King Lear"
+            ],
+            "answer": "Hamlet"
+        },
+        {
+            "question": "Which was the first play on Roman themes written by Shakespeare?",
+            "options": [
+                "Julius Caesar",
+                "Antony and Cleopatra",
+                "Coriolanus",
+                "Titus Andronicus"
+            ],
+            "answer": "Titus Andronicus"
+        },
+        {
+            "question": "In which of the following plays by Shakespeare does the comic character Falstaff appear?",
+            "options": [
+                "Henry IV",
+                "Richard III",
+                "The Tempest",
+                "Twelfth Night"
+            ],
+            "answer": "Henry IV"
+        }
+    ]
+}
