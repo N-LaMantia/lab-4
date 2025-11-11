@@ -3,17 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-if (import.meta.env.DEV) {
-  const { worker } = await import('./mocks/browser');
-  await worker.start({
-    serviceWorker: {
-      url: '/mockServiceWorker.js',
-    },
-    onUnhandledRequest: 'bypass', // 🔑 allows /calculusQ.json through
-  });
-  renderApp()
-}
-else { renderApp() }
+// Use a real backend server for API in development instead of MSW.
+// Start the server separately with `npm run server` and then run the frontend `npm run dev`.
+renderApp();
 
 function renderApp() {
 

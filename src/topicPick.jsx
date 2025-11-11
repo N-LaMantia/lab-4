@@ -1,6 +1,7 @@
 //imports 
 import { useState, useEffect } from 'react';
 import './topicPick.css';
+import api from './api';
 
 //MATH SUBJECTS --------------------------------------------------------------
 
@@ -9,14 +10,9 @@ function CalculusQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/calculus')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/calculus')
+            .then(res => setQuizData(res.data)) //res.data is axios syntax
+            .catch(err => console.error('Failed to fetch calculus quiz:', err));
     }, []);
     // Helper to render a question with options and answer (function inside function!)
     // qIdx = question index
@@ -48,7 +44,7 @@ function CalculusQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -66,14 +62,9 @@ function AlgebraQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/algebra')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/algebra')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch algebra quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -105,7 +96,7 @@ function AlgebraQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -122,14 +113,9 @@ function GeometryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/geometry')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/geometry')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch geometry quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -159,7 +145,7 @@ function GeometryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -180,14 +166,9 @@ function CanadaHistoryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/canada')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/canada')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch canada quiz:', err));
     }, []);
 
 
@@ -218,7 +199,7 @@ function CanadaHistoryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -234,14 +215,9 @@ function UsaHistoryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/us')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/us')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch US quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -270,7 +246,7 @@ function UsaHistoryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -286,14 +262,9 @@ function JapanHistoryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/japan')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/japan')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch japan quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -322,7 +293,7 @@ function JapanHistoryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -343,14 +314,9 @@ function PhysicsQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/physics')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/physics')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch physics quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -380,7 +346,7 @@ function PhysicsQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -396,14 +362,9 @@ function ChemistryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/chemistry')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/chemistry')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch chemistry quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -433,7 +394,7 @@ function ChemistryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -448,14 +409,9 @@ function BiologyQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/biology')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/biology')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch biology quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -485,7 +441,7 @@ function BiologyQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -506,14 +462,9 @@ function PoetryQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/poetry')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/poetry')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch poetry quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -543,7 +494,7 @@ function PoetryQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -560,14 +511,9 @@ function NovelQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/novels')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/novels')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch novels quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (
@@ -597,7 +543,7 @@ function NovelQuiz() {
             <br />
             <h3>{quizData ? quizData.quizMessage : 'Loading...'}</h3>
             <br />
-            <h3>{quizData ? `Number of Questions: ${quizData.questions.length}` : 'Loading...'}</h3>
+            <h3>{quizData ? `Number of Questions: ${quizData.questions?.length ?? 0}` : 'Loading...'}</h3>
             <br />
             <hr />
             {quizData
@@ -613,14 +559,9 @@ function PlayQuiz() {
     const [selected, setSelected] = useState({ questionIndex: null, option: null });
 
     useEffect(() => {
-        try {
-            fetch('/api/quiz/plays')
-                .then(res => res.json())
-                .then(data => setQuizData(data))
-        }
-        catch {
-            console.log("Something went wrong. Not fetching.")
-        }
+        api.get('/api/quiz/plays')
+            .then(res => setQuizData(res.data))
+            .catch(err => console.error('Failed to fetch plays quiz:', err));
     }, []);
 
     const renderQuestion = (q, qIdx) => (

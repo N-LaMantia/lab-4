@@ -36,3 +36,12 @@ If you are developing a production application, we recommend using TypeScript wi
 1. https://www.britannica.com/quiz/shakespeare-and-his-plays-quiz for the quiz questions on plays.
 2. https://www.britannica.com/quiz/the-literary-world-famous-novels for the quiz questions on novels. 
 3. https://www.britannica.com/quiz/a-study-of-poetry for the quiz questions on poetry. 
+
+
+## About 
+This project is for CS-465 Lab 4. It is a representation of a quiz website using HTML, JavaScript, and CSS. I am using a Mock Service Worker and axios to handle requests. I use npmlog to handle logging (logger.js). Every call should go through the logger.  
+
+## To Run Lab 4 and Lab 3
+1. npm install
+2. npm run dev
+3. For specific steps on Lab 4, see README-Lab4.md
