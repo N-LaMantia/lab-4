@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const publicDir = path.join(process.cwd(), 'public');
+//ignore this error. This persists when not in runtime
 
 const mapping = {
     calculus: 'calculusQ.json',
