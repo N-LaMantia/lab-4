@@ -3,13 +3,16 @@ import fs from 'fs';
 import path from 'path';
 import cors from 'cors';
 
+//using express framework
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 const publicDir = path.join(process.cwd(), 'public');
 //ignore this error. This persists when not in runtime
 
+//mapping subjects to their json files
 const mapping = {
     calculus: 'calculusQ.json',
     algebra: 'algebraQ.json',
@@ -25,6 +28,7 @@ const mapping = {
     poetry: 'poetry.json',
 };
 
+//route to get quiz data based on topic
 app.get('/api/quiz/:topic', (req, res) => {
     const topic = req.params.topic;
     const fileName = mapping[topic];
@@ -40,7 +44,7 @@ app.get('/api/quiz/:topic', (req, res) => {
     });
 });
 
-// Logging endpoint: append JSON lines to app.log in project root
+// Logging which returns JSON lines to app.log in project root (line 54)
 app.post('/api/logs', (req, res) => {
     const entry = {
         timestamp: new Date().toISOString(),
@@ -57,5 +61,6 @@ app.post('/api/logs', (req, res) => {
     });
 });
 
+//defining port and starting server
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`API server listening on http://localhost:${port}`));
